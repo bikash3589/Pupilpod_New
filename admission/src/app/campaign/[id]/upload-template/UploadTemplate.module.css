@@ -1,0 +1,161 @@
+.pageHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.pageHeader :global(.page-title) {
+  margin-bottom: 0;
+}
+
+.breadcrumbNav {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  color: #2f80ed;
+}
+
+.breadcrumbNav a {
+  color: #2f80ed;
+}
+
+.breadcrumbNav a:hover {
+  text-decoration: underline;
+}
+
+.breadcrumbCurrent {
+  color: #6b7280;
+}
+
+.card {
+  padding: 20px;
+}
+
+.toolbar {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.sectionTitle {
+  margin: 24px 0 12px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #17375e;
+}
+
+.sectionTitle:first-child {
+  margin-top: 0;
+}
+
+.filterRow {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+.filterRow label {
+  font-size: 13px;
+  color: #444;
+}
+
+.filterRow select {
+  height: 34px;
+  padding: 0 10px;
+  border: 1px solid #d7d7d7;
+  border-radius: 3px;
+  font-size: 13px;
+  outline: none;
+  min-width: 200px;
+}
+
+.filterRow select:focus {
+  border-color: #2f80ed;
+}
+
+.helpText {
+  margin-bottom: 16px;
+  color: #6b7280;
+  font-size: 13px;
+}
+
+/* Standard table — matches CampaignTable / WorkflowTable / ButtonPermission */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.table th {
+  text-align: left;
+  padding: 10px 8px;
+  border-bottom: 2px solid #e5e7eb;
+  color: #6b7280;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.table td {
+  padding: 10px 8px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.emptyCell {
+  text-align: center;
+  color: #6b7280;
+  padding: 24px 8px;
+}
+
+.actionLinks {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.actionLinks a {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+.actionLinks a:hover {
+  text-decoration: underline;
+}
+
+.actionLinks button {
+  background: none;
+  border: none;
+  padding: 0;
+  color: #2563eb;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.actionLinks button:hover {
+  text-decoration: underline;
+}
+
+.deleteAction {
+  color: #dc2626;
+}
+
+.setParameterButton {
+  border: 1px solid #d1d5db;
+  background: #ffffff;
+  color: #17375e;
+  padding: 6px 14px;
+  border-radius: 4px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.setParameterButton:hover {
+  background: #f5f6f8;
+}

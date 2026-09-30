@@ -1,0 +1,87 @@
+.formTitle {
+  margin: 0 0 20px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #17375e;
+}
+
+.formGrid {
+  display: grid;
+  grid-template-columns: 200px minmax(260px, 630px);
+  column-gap: 40px;
+  row-gap: 22px;
+  align-items: center;
+  width: 100%;
+}
+
+.label {
+  color: #17375e;
+  font-size: 14px;
+}
+
+.required {
+  color: #17375e;
+}
+
+.control select,
+.control input[type="text"] {
+  width: 100%;
+  height: 38px;
+  padding: 0 12px;
+  border: 1px solid #d9dde3;
+  border-radius: 3px;
+  background: #ffffff;
+  color: #17375e;
+  font-size: 13px;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.control select:focus,
+.control input[type="text"]:focus {
+  border-color: #2875c7;
+}
+
+.control input[type="text"]:disabled {
+  background: #f5f6f8;
+  color: #6b7280;
+}
+
+.error {
+  margin: 6px 0 0;
+  color: #ff0000;
+  font-size: 12px;
+}
+
+.note {
+  align-self: start;
+  color: #6b7280;
+  font-size: 12px;
+}
+
+.submitButton {
+  justify-self: start;
+  padding: 10px 22px;
+  border: none;
+  border-radius: 3px;
+  background: #2875c7;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.submitButton:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+@media (max-width: 700px) {
+  .formGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .note {
+    grid-column: 1;
+  }
+}

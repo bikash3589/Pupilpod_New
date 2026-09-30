@@ -1,0 +1,57 @@
+.tile {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  width: 100%;
+  height: 42px;
+
+  padding: 0 12px;
+
+  background: #ffffff;
+
+  border: 1px solid #e5e7eb;
+
+  border-radius: 6px;
+
+  cursor: grab;
+
+  transition: .2s;
+}
+
+.tile:hover {
+  border-color: #f59e0b;
+
+  background: #fffdf7;
+}
+
+.tile:active {
+  cursor: grabbing;
+}
+
+.icon {
+  width: 18px;
+  height: 18px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #6b7280;
+
+  flex-shrink: 0;
+}
+
+.title {
+  font-size: 13px;
+
+  font-weight: 500;
+
+  color: #374151;
+
+  white-space: nowrap;
+
+  overflow: hidden;
+
+  text-overflow: ellipsis;
+}

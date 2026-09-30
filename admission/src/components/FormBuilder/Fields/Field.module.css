@@ -1,0 +1,462 @@
+/* .fieldContainer {
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+  height: 100%;
+  min-height: 0;
+  flex: 1 1 auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+
+  gap: 8px;
+
+  padding: 0;
+
+  background: transparent;
+}
+
+.label {
+  display: flex;
+
+  align-items: center;
+
+  gap: 6px;
+
+  font-size: 15px;
+
+  font-weight: 600;
+
+  color: #222;
+}
+
+.required {
+  color: #dc2626;
+
+  font-size: 18px;
+
+  font-weight: bold;
+}
+
+.input,
+.textarea,
+.select {
+  width: 100%;
+  height: 100%;
+  min-width: 0;
+  min-height: 0;
+  box-sizing: border-box;
+  flex: 1 1 auto;
+
+  padding: 12px;
+
+  border: 1px solid #d1d5db;
+
+  border-radius: 8px;
+
+  font-size: 14px;
+
+  outline: none;
+
+  background: #ffffff;
+
+  transition: border-color 0.2s ease;
+}
+
+.input:focus,
+.textarea:focus,
+.select:focus {
+  border-color: #2563eb;
+}
+
+.textarea {
+  min-height: 0;
+
+  resize: vertical;
+}
+
+.option {
+  display: flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  margin-top: 6px;
+}
+
+.helpText {
+  font-size: 12px;
+
+  color: #6b7280;
+}
+ */
+.fieldContainer {
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+
+  gap: 6px;
+
+  padding: 0;
+
+  background: transparent;
+}
+
+.label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #374151;
+}
+
+.required {
+  color: #dc2626;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.input,
+.textarea,
+.select {
+  width: 100%;
+  box-sizing: border-box;
+
+  padding: 10px 12px;
+
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+
+  font-size: 14px;
+  font-family: inherit;
+  color: #111827;
+
+  outline: none;
+  background: #ffffff;
+
+  transition: border-color 0.2s ease;
+}
+
+.input::placeholder,
+.textarea::placeholder {
+  color: #9ca3af;
+}
+
+.input:focus,
+.textarea:focus,
+.select:focus {
+  border-color: #2563eb;
+}
+
+.textarea {
+  min-height: 90px;
+  resize: vertical;
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 6px;
+}
+
+.helpText {
+  font-size: 12px;
+  color: #6b7280;
+}
+.optionGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.optionRow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #374151;
+  cursor: pointer;
+}
+
+.optionInput {
+  width: 16px;
+  height: 16px;
+  margin: 0;
+  cursor: pointer;
+  accent-color: #2563eb;
+}
+
+.fileRow {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.fileButton {
+  padding: 8px 16px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  background: #f9fafb;
+  font-size: 13px;
+  font-weight: 600;
+  color: #374151;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.fileButton:hover {
+  background: #f3f4f6;
+  border-color: #9ca3af;
+}
+
+.fileName {
+  font-size: 13px;
+  color: #9ca3af;
+}
+
+.fileInput {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+.questionInput {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 6px 8px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #374151;
+  border: none;
+  border-bottom: 1px dashed #d1d5db;
+  background: transparent;
+  outline: none;
+  font-family: inherit;
+}
+
+.questionInput:focus {
+  border-bottom-color: #2563eb;
+}
+
+.optionEditRow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.optionBullet {
+  font-size: 13px;
+  color: #9ca3af;
+  width: 16px;
+}
+
+.optionEditInput {
+  flex: 1;
+  box-sizing: border-box;
+  padding: 6px 8px;
+  font-size: 13px;
+  color: #374151;
+  border: 1px solid #e5e7eb;
+  border-radius: 5px;
+  outline: none;
+  font-family: inherit;
+}
+
+.optionEditInput:focus {
+  border-color: #2563eb;
+}
+
+.optionRemoveButton {
+  width: 22px;
+  height: 22px;
+  border: none;
+  border-radius: 4px;
+  background: transparent;
+  color: #9ca3af;
+  cursor: pointer;
+  font-size: 12px;
+  flex-shrink: 0;
+}
+
+.optionRemoveButton:hover {
+  background: #fee2e2;
+  color: #dc2626;
+}
+
+.addOptionButton {
+  align-self: flex-start;
+  margin-top: 4px;
+  padding: 5px 10px;
+  border: 1px dashed #d1d5db;
+  border-radius: 6px;
+  background: transparent;
+  color: #6b7280;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.addOptionButton:hover {
+  border-color: #2563eb;
+  color: #2563eb;
+}
+.labelAsInput {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  background: #ffffff;
+  font-weight: 400;
+  color: #374151;
+}
+.richTextToolbar {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 8px;
+}
+
+.toolbarButton {
+  width: 28px;
+  height: 28px;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+  background: #ffffff;
+  cursor: pointer;
+  font-size: 13px;
+  color: #374151;
+}
+
+.toolbarButton:hover {
+  background: #f3f4f6;
+}
+
+.richTextContent {
+  min-height: 28px;
+  outline: none;
+  padding: 6px 4px;
+  border: 1px dashed transparent;
+  border-radius: 4px;
+}
+
+.richTextContent:focus {
+  border-color: #93c5fd;
+}
+
+.richTextContent a {
+  color: #2563eb;
+  text-decoration: underline;
+}
+
+/* ============================================================
+   APPEND THIS BLOCK to the END of Field.module.css
+   (nothing above needs to change — these are brand new rules
+   only used by RichTextField.tsx for the "text" field type)
+   ============================================================ */
+
+/* Row: the "+" icon sitting beside the editable container */
+.richTextWrapper {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  width: 100%;
+}
+
+.richPlusButton {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  margin-top: 2px;
+
+  border: 1px dashed #d1d5db;
+  border-radius: 50%;
+  background: #ffffff;
+
+  color: #6b7280;
+  font-size: 14px;
+  line-height: 1;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+}
+
+.richPlusButton:hover {
+  border-color: #2563eb;
+  color: #2563eb;
+  background: #eff6ff;
+}
+
+/* Everything to the right of the plus icon: toolbar + text area */
+.richTextBody {
+  flex: 1;
+  min-width: 0;
+}
+
+/* Empty-state placeholder text, shown only when the box has no content yet */
+.richTextContent:empty::before {
+  content: attr(data-placeholder);
+  color: #9ca3af;
+}
+
+/* Font sizing per block type — this is what makes H1 actually look
+   bigger than a Paragraph while you're editing, not just in preview. */
+/* Paragraph stays normal weight. Every heading level (H1–H6) is bold
+   by default now — only the font-size shrinks as you go from H1 down
+   to H6, the boldness itself doesn't taper off. */
+.richP  { font-size: 14px; font-weight: 400; line-height: 1.5;  color: #111827; }
+.richH1 { font-size: 32px; font-weight: 700; line-height: 1.25; color: #111827; }
+.richH2 { font-size: 26px; font-weight: 700; line-height: 1.3;  color: #111827; }
+.richH3 { font-size: 22px; font-weight: 700; line-height: 1.3;  color: #111827; }
+.richH4 { font-size: 18px; font-weight: 700; line-height: 1.4;  color: #111827; }
+.richH5 { font-size: 16px; font-weight: 700; line-height: 1.4;  color: #111827; }
+.richH6 { font-size: 14px; font-weight: 700; line-height: 1.4;  color: #374151; }
+
+/* Highlighted state for the toolbar buttons when their style (bold/
+   italic/underline) is currently active at the cursor or selection.
+   All three can be highlighted at the same time. */
+.toolbarButtonActive {
+  background: #dbeafe;
+  border-color: #2563eb;
+  color: #1d4ed8;
+}
+
+/* The Paragraph/Heading dropdown, now living inside the container's own
+   toolbar instead of the Properties panel. */
+.blockTypeSelect {
+  height: 28px;
+  padding: 0 6px;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+  background: #ffffff;
+  font-size: 12px;
+  color: #374151;
+  cursor: pointer;
+  outline: none;
+}
+
+.blockTypeSelect:hover {
+  border-color: #9ca3af;
+}
+
+.blockTypeSelect:focus {
+  border-color: #2563eb;
+}

@@ -1,0 +1,138 @@
+.breadcrumbBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 14px 20px;
+  background: #eef1f5;
+  border: 1px solid #dcdcdc;
+  border-radius: 4px 4px 0 0;
+}
+
+.breadcrumbTitle {
+  font-size: 16px;
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.breadcrumbNav {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  color: #2f80ed;
+}
+
+.breadcrumbNav a {
+  color: #2f80ed;
+}
+
+.breadcrumbNav a:hover {
+  text-decoration: underline;
+}
+
+.breadcrumbCurrent {
+  color: #6b7280;
+}
+
+.card {
+  padding: 20px;
+}
+
+.filterRow {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 10px;
+}
+
+.filterLabel {
+  width: 110px;
+  flex-shrink: 0;
+  font-size: 13px;
+  color: #444;
+}
+
+.filterRow input,
+.filterRow select {
+  width: 300px;
+  height: 34px;
+  padding: 0 10px;
+  border: 1px solid #d7d7d7;
+  border-radius: 3px;
+  font-size: 13px;
+  outline: none;
+}
+
+.filterRow input:focus,
+.filterRow select:focus {
+  border-color: #2f80ed;
+}
+
+.headingRow {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 18px 0 16px;
+}
+
+.listTitle {
+  font-size: 22px;
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.headingActions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+.searchButtons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.clearButton {
+  background: none;
+  border: none;
+  color: #2f80ed;
+  font-size: 13px;
+  cursor: pointer;
+  padding: 0;
+}
+
+.clearButton:hover {
+  text-decoration: underline;
+}
+
+.goButton {
+  height: 34px;
+  padding: 0 20px;
+  border: none;
+  border-radius: 3px;
+  background: #2875c7;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.addWorkflowButton {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 3px;
+  background: #2875c7;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.addWorkflowButton:hover {
+  background: #1f5fa0;
+}

@@ -1,0 +1,49 @@
+.applicationContainer {
+  width: 100%;
+  min-height: 650px;
+  padding: 20px;
+  background: #ffffff;
+  border: 1px solid #dcdcdc;
+  border-radius: 4px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.formRow {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.formLabel {
+  width: 50%;
+  padding-top: 7px;
+  color: #17375e;
+  font-size: 13px;
+}
+
+.formField {
+  width: 50%;
+}
+
+.formField input,
+.formField select {
+  width: 100%;
+  height: 37px;
+  padding: 0 10px;
+  border: 1px solid #dcdcdc;
+  border-radius: 3px;
+  box-sizing: border-box;
+  background: #ffffff;
+}
+
+/*{Error Message}*/
+.error {
+  margin-top: 5px;
+  color: #dc2626;
+  font-size: 12px;
+}

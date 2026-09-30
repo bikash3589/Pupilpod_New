@@ -1,0 +1,109 @@
+.dropZone {
+  width: 100%;
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  min-height: 110px;
+  padding: 16px;
+
+  border: 2px dashed #d1d5db;
+  border-radius: 8px;
+  background: #f9fafb;
+
+  cursor: pointer;
+  transition: 0.15s;
+}
+
+.dropZone:hover {
+  border-color: #93c5fd;
+  background: #f0f6ff;
+}
+
+.dragOver {
+  border-color: #2563eb;
+  background: #eff6ff;
+}
+
+.hiddenInput {
+  display: none;
+}
+
+.uploadIcon {
+  color: #9ca3af;
+}
+
+.dropText {
+  font-size: 13px;
+  color: #6b7280;
+  text-align: center;
+}
+
+.filePreview {
+  width: 100%;
+  box-sizing: border-box;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  padding: 8px 10px;
+
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+
+  cursor: default;
+}
+
+.fileIcon {
+  color: #2563eb;
+  flex-shrink: 0;
+}
+
+.fileMeta {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.fileName {
+  font-size: 13px;
+  font-weight: 500;
+  color: #111827;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.fileSize {
+  font-size: 11px;
+  color: #9ca3af;
+}
+
+.removeButton {
+  flex-shrink: 0;
+  width: 22px;
+  height: 22px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: none;
+  border-radius: 4px;
+  background: transparent;
+  color: #9ca3af;
+
+  cursor: pointer;
+}
+
+.removeButton:hover {
+  background: #fee2e2;
+  color: #dc2626;
+}

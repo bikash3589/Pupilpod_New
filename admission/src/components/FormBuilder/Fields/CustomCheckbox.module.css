@@ -1,0 +1,66 @@
+.row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  color: #374151;
+}
+
+/* Checkbox square */
+.box {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1.5px solid #d1d5db;
+  border-radius: 4px;
+  background: #ffffff;
+
+  transition: 0.15s;
+}
+
+.boxChecked {
+  background: #2563eb;
+  border-color: #2563eb;
+}
+
+.checkIcon {
+  color: #ffffff;
+}
+
+/* Radio circle */
+.circle {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1.5px solid #d1d5db;
+  border-radius: 50%;
+  background: #ffffff;
+
+  transition: 0.15s;
+}
+
+.circleChecked {
+  border-color: #2563eb;
+}
+
+.dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: #2563eb;
+}
+
+.labelText {
+  user-select: none;
+}

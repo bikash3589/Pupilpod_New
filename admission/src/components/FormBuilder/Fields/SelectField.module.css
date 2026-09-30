@@ -1,0 +1,29 @@
+.optionRow {
+  width: 100%;
+  box-sizing: border-box;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 8px 10px;
+
+  border: none;
+  border-radius: 6px;
+  background: transparent;
+
+  font-size: 13px;
+  color: #374151;
+  text-align: left;
+
+  cursor: pointer;
+}
+
+.optionRow:hover {
+  background: #f3f4f6;
+}
+
+.checkIcon {
+  color: #2563eb;
+  flex-shrink: 0;
+}

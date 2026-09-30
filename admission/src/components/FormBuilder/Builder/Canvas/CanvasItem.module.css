@@ -1,0 +1,359 @@
+/* /* .item {
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: stretch;
+
+  margin-bottom: 14px;
+
+  border: 2px solid transparent;
+
+  border-radius: 10px;
+
+  background: white;
+
+  cursor: grab;
+
+  transition: .2s;
+}
+
+.item:hover {
+  border-color: #dbeafe;
+}
+
+.selected {
+  border-color: #2563eb;
+}
+
+.square {
+  border-radius: 0;
+}
+
+.square .resizeHandle {
+  border-radius: 0;
+}
+
+.spacerItem {
+  margin-bottom: 0;
+  background: transparent;
+}
+
+.spacerItem:hover {
+  border-color: #93c5fd;
+  background: rgba(219, 234, 254, .35);
+}
+
+.content {
+  width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+  min-height: 0;
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: stretch;
+  padding: 0;
+}
+
+.content > * {
+  width: 100%;
+  min-width: 0;
+  min-height: 0;
+  flex: 1 1 auto;
+}
+
+.freeItem {
+  position: absolute;
+  margin-bottom: 0;
+}
+
+.resizeHandle {
+  position: absolute;
+  right: -6px;
+  bottom: -6px;
+  z-index: 4;
+  display: none;
+  width: 14px;
+  height: 14px;
+  padding: 0;
+  border: 2px solid white;
+  border-radius: 3px;
+  background: #2563eb;
+  cursor: nwse-resize;
+}
+
+.item:hover .resizeHandle,
+.selected .resizeHandle {
+  display: block;
+}
+
+.toolbar {
+  position: absolute;
+
+  top: -14px;
+
+  right: 10px;
+
+  display: none;
+
+  gap: 8px;
+
+  padding: 4px 6px;
+
+  border-radius: 8px;
+
+  background: white;
+
+  border: 1px solid #d1d5db;
+
+  box-shadow: 0 6px 18px rgba(0,0,0,.12);
+}
+
+.item:hover .toolbar {
+  display: flex;
+}
+
+.iconButton {
+  width: 28px;
+
+  height: 28px;
+
+  border: none;
+
+  border-radius: 6px;
+
+  background: transparent;
+
+  cursor: pointer;
+
+  font-size: 15px;
+}
+
+.iconButton:hover {
+  background: #eff6ff;
+}
+
+.dragging,
+.dragging * {
+  cursor: grabbing !important;
+  user-select: none;
+}
+.iconButton[draggable="true"] {
+  cursor: grab;
+}
+
+.iconButton[draggable="true"]:active {
+  cursor: grabbing;
+} */
+
+.item {
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: stretch;
+
+  margin-bottom: 14px;
+
+  border: 2px solid transparent;
+
+  border-radius: 10px;
+
+  background: white;
+
+  transition: .2s;
+  cursor: grab;
+}
+
+.item:hover {
+  border-color: #dbeafe;
+}
+
+.selected {
+  border-color: #2563eb;
+}
+
+.square {
+  border-radius: 0;
+}
+
+.square .resizeHandle {
+  border-radius: 0;
+}
+
+.spacerItem {
+  margin-bottom: 0;
+  background: transparent;
+}
+
+.spacerItem:hover {
+  border-color: #93c5fd;
+  background: rgba(219, 234, 254, .35);
+}
+
+.content {
+  width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+  min-height: 0;
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: stretch;
+  padding: 0;
+}
+
+.content > * {
+  width: 100%;
+  min-width: 0;
+  min-height: 0;
+  flex: 1 1 auto;
+}
+
+.resizeHandle {
+  position: absolute;
+  right: -6px;
+  bottom: -6px;
+  z-index: 4;
+  display: none;
+  width: 14px;
+  height: 14px;
+  padding: 0;
+  border: 2px solid white;
+  border-radius: 3px;
+  background: #2563eb;
+  cursor: nwse-resize;
+}
+
+.item:hover .resizeHandle,
+.selected .resizeHandle {
+  display: block;
+}
+
+.toolbar {
+  position: absolute;
+
+  top: -14px;
+
+  right: 10px;
+
+  display: none;
+
+  gap: 4px;
+
+  padding: 4px;
+
+  border-radius: 8px;
+
+  background: white;
+
+  border: 1px solid #e5e7eb;
+
+  box-shadow: 0 6px 18px rgba(0,0,0,.12);
+}
+
+.item:hover .toolbar {
+  display: flex;
+}
+
+/* ==========================================================
+   Toolbar icon buttons — was plain black-on-white before, now
+   each icon has its own resting color and a colored hover state
+   instead of the flat default browser-button look.
+   ========================================================== */
+
+.iconButton {
+  width: 26px;
+  height: 26px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: none;
+  border-radius: 6px;
+
+  background: transparent;
+  color: #6b7280; /* neutral gray at rest */
+
+  cursor: pointer;
+
+  transition: background-color .15s ease, color .15s ease;
+}
+
+.iconButton:hover {
+  background: #eff6ff; /* light blue */
+  color: #2563eb;       /* blue icon on hover */
+}
+
+.iconButton:active {
+  background: #dbeafe;
+}
+
+/* Delete gets its own danger styling — red on hover instead of blue,
+   so it visually stands apart as a destructive action. */
+.iconButtonDanger {
+  width: 26px;
+  height: 26px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: none;
+  border-radius: 6px;
+
+  background: transparent;
+  color: #6b7280;
+
+  cursor: pointer;
+
+  transition: background-color .15s ease, color .15s ease;
+}
+
+.iconButtonDanger:hover {
+  background: #fee2e2; /* light red */
+  color: #dc2626;       /* red icon on hover */
+}
+
+.iconButtonDanger:active {
+  background: #fecaca;
+}
+
+.iconButton[draggable="true"] {
+  cursor: grab;
+}
+
+.iconButton[draggable="true"]:active {
+  cursor: grabbing;
+}
+
+.dragging,
+.dragging * {
+  cursor: grabbing !important;
+  user-select: none;
+}
+.dragOver {
+  border-top: 3px solid #2563eb;
+  margin-top: 11px;
+}
+.dropBefore {
+  border-top: 3px solid #2563eb;
+  margin-top: 11px;
+}
+
+.dropAfter {
+  border-bottom: 3px solid #2563eb;
+  margin-bottom: 11px;
+}

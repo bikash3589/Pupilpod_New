@@ -1,0 +1,315 @@
+.successBanner {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 16px;
+  padding: 12px 16px;
+  border: 1px solid #b7e4c7;
+  border-radius: 3px;
+  background: #eafaf1;
+  color: #1e7e34;
+  font-size: 13px;
+}
+
+.successBanner a,
+.successBanner button {
+  color: #1e7e34;
+  font-weight: 600;
+  text-decoration: underline;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.applicationContainer {
+  width: 100%;
+  margin-top: 20px;
+  padding: 0 10px 25px;
+  background: #ffffff;
+  border: 1px solid #dcdcdc;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+
+.formGrid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr)auto;/* 5 equal fields + 1 auto-sized button column */
+  align-items: end; /* aligns the button vertically with the input fields, not the labels */
+  column-gap: 24px;
+  row-gap: 14px;
+  width: 100%;
+  padding: 10px 0;
+}
+
+.formGroup {
+  min-width: 0;
+}
+
+/* Labels */
+
+.formGroup label {
+  display: block;
+  margin-bottom: 7px;
+  color: #17375e;
+  font-size: 13px;
+  line-height: 16px;
+}
+
+.formGroup label span {
+  color: #17375e;
+}
+
+/* Inputs and selects */
+
+.formGroup input,
+.formGroup select {
+  width: 100%;
+  height: 36px;
+  padding: 0 12px;
+  border: 1px solid #d9dde3;
+  border-radius: 3px;
+  background: #ffffff;
+  color: #17375e;
+  font-size: 13px;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.formGroup input:focus,
+.formGroup select:focus {
+  border-color: #2875c7;
+}
+
+/* Error */
+
+.error {
+  margin: 5px 0 0;
+  color: #ff0000;
+  font-size: 13px;
+}
+
+
+/* Checkboxes */
+
+.checkboxRow {
+  display: flex;
+  align-items: flex-start;
+  gap: 25px;
+  margin-top: 2px;
+  margin-bottom: 18px;
+}
+
+.checkboxGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-width: 300px;
+}
+
+.checkboxGroup label {
+  color: #17375e;
+  font-size: 13px;
+}
+
+.checkboxGroup input {
+  width: 13px;
+  height: 13px;
+  margin: 0 0 0 3px;
+}
+
+
+/* Description */
+
+.descriptionGroup {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.descriptionGroup label {
+  display: block;
+  margin-bottom: 8px;
+  color: #17375e;
+  font-size: 13px;
+}
+
+.descriptionGroup textarea {
+  width: 100%;
+  min-height: 95px;
+  padding: 8px;
+  border: 1px solid #d9dde3;
+  border-radius: 3px;
+  resize: vertical;
+  box-sizing: border-box;
+  outline: none;
+  font-family: inherit;
+  font-size: 13px;
+}
+
+
+/* Application Forms */
+
+.applicationFormsSection {
+  margin: 4px 0 18px;
+}
+
+.applicationFormsTitle {
+  margin: 0 0 10px;
+  color: #17375e;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.applicationFormsRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.formTypeGroup {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #17375e;
+  font-size: 13px;
+}
+
+.onlineFormColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.onlineFormHint {
+  color: #9aa5b1;
+  font-size: 12px;
+  font-style: italic;
+}
+
+.formSavedNote {
+  color: #1e7e34;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.iconButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  padding: 2px;
+  color: #2875c7;
+  cursor: pointer;
+}
+
+.iconButton:hover {
+  color: #17375e;
+}
+
+/* Seat Matrix */
+
+.seatHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 8px 0 12px;
+}
+
+.seatHeader button {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 3px;
+  background: #2875c7;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.seatHeader span {
+  color: #17375e;
+  font-size: 13px;
+}
+
+.seatGrid {
+  display: grid;
+  grid-template-columns: 1.2fr 1.2fr 1.2fr 1.2fr 0.8fr auto;
+  gap: 24px;
+}
+
+
+/* Footer */
+
+.formFooter {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 60px;
+  margin-top: 4px;
+}
+
+.formFooter span {
+  position: absolute;
+  left: 0;
+  bottom: 5px;
+  color: #17375e;
+  font-size: 12px;
+}
+
+.formFooter button {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 3px;
+  background: #2875c7;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.removeRowButton {
+  background: none;
+  border: none;
+  color: #dc2626;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 4px 8px;
+  align-self: center;
+}
+.removeRowButton:hover {
+  color: #b91c1c;
+}
+
+/* Responsive */
+
+@media (max-width: 1000px) {
+  .formGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .seatGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .formGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .seatGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .checkboxRow {
+    flex-direction: column;
+  }
+
+  .checkboxGroup {
+    min-width: auto;
+  }
+}

@@ -1,0 +1,30 @@
+/* Scoped element reset for the FormBuilder feature.
+   admission's own globals.css already resets box-sizing/margin/padding,
+   but not button/input/select/list appearance the way the original
+   formbuilder app's globals.css did — without this, native browser
+   chrome shows through and the builder/preview layouts look broken. */
+
+.fbRoot button {
+  border: none;
+  outline: none;
+  background: none;
+  cursor: pointer;
+  font: inherit;
+}
+
+.fbRoot input,
+.fbRoot textarea,
+.fbRoot select {
+  font: inherit;
+  outline: none;
+}
+
+.fbRoot ul,
+.fbRoot ol {
+  list-style: none;
+}
+
+.fbRoot img {
+  display: block;
+  max-width: 100%;
+}

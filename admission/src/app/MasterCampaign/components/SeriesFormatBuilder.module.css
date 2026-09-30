@@ -1,0 +1,87 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.preview {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.preview input {
+  flex: 1;
+  height: 37px;
+  padding: 0 10px;
+  border: 1px solid #dcdcdc;
+  border-radius: 3px;
+  background: #f4f6f9;
+  color: #333;
+}
+
+.clearButton {
+  height: 37px;
+  width: 37px;
+  border: 1px solid #dcdcdc;
+  border-radius: 3px;
+  background: #ffffff;
+  cursor: pointer;
+  color: #dc2626;
+}
+
+.blockList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 13px;
+}
+
+.blockList li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6px 10px;
+  background: #f4f6f9;
+  border: 1px solid #e5e7eb;
+  border-radius: 3px;
+}
+
+.blockList li button {
+  background: none;
+  border: none;
+  color: #dc2626;
+  cursor: pointer;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+}
+
+.blockForm {
+  display: flex;
+  align-items: flex-end;
+  gap: 10px;
+  padding: 10px;
+  background: #f4f6f9;
+  border: 1px solid #e5e7eb;
+  border-radius: 3px;
+  flex-wrap: wrap;
+}
+
+.blockForm label {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 12px;
+  color: #17375e;
+}
+
+.blockForm input {
+  height: 34px;
+  padding: 0 10px;
+  border: 1px solid #dcdcdc;
+  border-radius: 3px;
+}

@@ -1,0 +1,38 @@
+.wrapper {
+  width: 100%;
+}
+
+.textarea {
+  width: 100%;
+  box-sizing: border-box;
+
+  padding: 10px 12px;
+
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+
+  font-size: 14px;
+  font-family: inherit;
+  color: #111827;
+
+  outline: none;
+  resize: none; /* height is handled automatically instead */
+  overflow: hidden;
+
+  transition: border-color 0.15s ease;
+}
+
+.textarea::placeholder {
+  color: #9ca3af;
+}
+
+.textarea:focus {
+  border-color: #2563eb;
+}
+
+.counter {
+  margin-top: 4px;
+  text-align: right;
+  font-size: 11px;
+  color: #9ca3af;
+}

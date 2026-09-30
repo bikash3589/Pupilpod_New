@@ -1,0 +1,45 @@
+.pageHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 4px;
+}
+
+.breadcrumbNav {
+  display: flex;
+  gap: 6px;
+  font-size: 13px;
+  color: #6b7280;
+}
+
+.breadcrumbNav a {
+  color: #2563eb;
+}
+
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 20px 0;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.searchBox input {
+  width: 260px;
+  height: 36px;
+  padding: 0 10px;
+  border: 1px solid #d1d5db;
+  border-radius: 3px;
+}
+
+.toolbarActions {
+  display: flex;
+  gap: 10px;
+}
+
+.sendButton {
+  background: #2f80ed !important;
+  color: #fff !important;
+  border-color: #2f80ed !important;
+}
